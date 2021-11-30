@@ -1,11 +1,13 @@
 function createFigure(e) {
+  windowWidth = window.innerWidth;
+  windowHeight = window.innerHeight;
   for (let i = 0; i < document.querySelector(".amount").value; i++) {
-    size = 50 + Math.random() * (Math.min(window.innerWidth, window.innerHeight) / 3 - 50)
+    size = 50 + Math.random() * (Math.min(windowWidth, windowHeight) / 3 - 50) + "px"
     style = {
-      width: size + "px",
-      height: size + "px",
-      top: Math.random() * (window.innerHeight - 2*size) + "px",
-      left: Math.random() * (window.innerWidth - 2*size) + "px"
+      width: size,
+      height: size,
+      left: Math.random() * (windowWidth - 2*size) + "px",
+      top: Math.random() * (windowHeight - 2*size) + "px",
     }
     element = document.createElement("div");
     element.className = e;
