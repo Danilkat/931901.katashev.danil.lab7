@@ -15,7 +15,6 @@ function createFigure(e) {
     for ( var key in style) {
       element.style[key] = style[key];
     }
-    console.log(style);
     document.querySelector(".figures").appendChild(element).addEventListener("dblclick", e => {e.target.parentElement.removeChild(e.target);});
   }
 }
