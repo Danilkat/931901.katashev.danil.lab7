@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+.figures {
+  position: relative;
+}
+
+.square {
+  position: absolute;
+  background: red;
+}
+
+.square:focus {
+  background: orange;
+}
+
+.circle {
+  position: absolute;
+  background: green;
+  border-radius: 50%;
+}
+
+.circle:focus {
+  background: orange;
+}
+
+.triangle {
+  position: absolute;
+  background: blue;
+  overflow: hidden;
+  
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.triangle:focus {
+  background: orange;
+}
